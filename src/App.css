@@ -2,6 +2,52 @@
   text-align: center;
 }
 
+.weather{
+  width: 50%;
+  height: 50%;
+}
+
+.left{
+  float: left;
+}
+
+.width100{
+  width: 100%;
+}
+#locatonTitle{
+  display:inline;
+}
+#locationSelect{
+  text-align: center;
+  font-size: 1.17em;
+}
+
+#weather{
+
+}
+
+.marquee{
+  transform: translateX(100%);
+  animation: marquee 5s linear infinite;
+}
+
+#marqueeContainer{
+  overflow: hidden;
+}
+
+@keyframes marquee {
+  0% {
+    -moz-transform: translateX(60%);
+    -webkit-transform: translateX(60%);
+    transform: translateX(60%);
+  }
+  100% {
+    -moz-transform: translateX(-60%);
+    -webkit-transform: translateX(-60%);
+    transform: translateX(-60%);
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
