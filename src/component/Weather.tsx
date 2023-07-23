@@ -4,13 +4,16 @@ import cloudy from "../image/cloudy.png";
 import rainy from "../image/rainy.png";
 import AdditionalInfo from './AdditionalInfo';
 
-function Weather(){
+function Weather(props: {prefecture:string, visibility:boolean}){
+    console.log("Weather " + props.prefecture);
     const weather: string[] = [sunny,cloudy,rainy];
     const title: string[] = ["最高気温","最低気温","湿度","体感温度"];
     const temperture: string[] = ["35.5℃","30.0℃","40％","37.4℃"];
+    const visibleStatus = (props.visibility ? "visible":"hidden");
+    console.log(visibleStatus);
 
     return(
-        <div>
+        <div style={{visibility:visibleStatus}}>
             <div id="marqueeContainer">
             <h2 id="weather">晴れ</h2>
             </div>

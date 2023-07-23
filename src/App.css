@@ -26,6 +26,13 @@
 
 }
 
+.show{
+  visibility: visible;
+}
+.hide{
+  visibility: hide;
+}
+
 .marquee{
   transform: translateX(100%);
   animation: marquee 5s linear infinite;
