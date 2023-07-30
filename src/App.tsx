@@ -17,6 +17,16 @@ function App() {
       setIsSelected(false);
     }
   }
+  const v = [];
+  for(let i=0; i<5; i++){
+    v.push("test: " + i);
+  }
+  const [testReturn, setTestReturn] = useState(v);
+  console.log(testReturn);
+  const t = testReturn;
+
+
+
   return (
     <div className="App">
       <h1>天気予報</h1>

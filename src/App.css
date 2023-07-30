@@ -3,16 +3,22 @@
 }
 
 .weather{
-  width: 50%;
-  height: 50%;
+  width: 55%;
+  height: 55%;
 }
 
 .left{
   float: left;
 }
+.right{
+  float: right;
+}
 
 .width100{
   width: 100%;
+}
+.width25{
+  width: 25%;
 }
 #locatonTitle{
   display:inline;
@@ -20,6 +26,10 @@
 #locationSelect{
   text-align: center;
   font-size: 1.17em;
+}
+
+.inline{
+  display:inline;
 }
 
 #weather{
